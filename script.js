@@ -250,7 +250,7 @@ function convertToBanglaNumber(englishNumber) {
 
 //logo Seting here
    function logochange(params) {
-    if(params == 0){
+    if(params <= 0){
   document.getElementById('duepaidsell').src = "paid.png";
     }
     setTimeout(delayedFunction, 500);
