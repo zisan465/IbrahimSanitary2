@@ -114,12 +114,14 @@ function parseAndDisplay(getValue) {
     
       var cellCode = document.createElement('td');
       cellCode.textContent = convertToBanglaNumber(result.products[i].code);
+      cellCode.contentEditable = true;
       row.appendChild(cellCode);
     
      
     
       var cellDescription = document.createElement('td'); 
       cellDescription.textContent =  convertToBanglaNumber(productlist[result.products[i].code]);
+      cellDescription.contentEditable = true;
       row.appendChild(cellDescription);  
       
     
@@ -127,14 +129,17 @@ function parseAndDisplay(getValue) {
       cellQuantity.colSpan = 3; // colspan='3'
       var unitchanging = convertUnits(result.products[i].quantity)
       cellQuantity.textContent = convertToBanglaNumber(unitchanging); 
+      cellQuantity.contentEditable = true;
       row.appendChild(cellQuantity); 
     
       var cellUnitPrice = document.createElement('td');
       cellUnitPrice.textContent = convertToBanglaNumber(result.products[i].unitPrice);
+      cellUnitPrice.contentEditable = true;
       row.appendChild(cellUnitPrice);
     
       var cellTotal = document.createElement('td');
       cellTotal.textContent = convertToBanglaNumber(result.products[i].total);
+      cellTotal.contentEditable = true;
       row.appendChild(cellTotal);
       productsTableBody.appendChild(row);
     }
@@ -177,18 +182,26 @@ function parseAndDisplay(getValue) {
     for (var i = 1; i < result.products.length; i++) {
       var row = document.createElement('tr');
       var cellNumber = document.createElement('td');
+      
       cellNumber.textContent = convertToBanglaNumber(i) ;
+      cellNumber.contentEditable = true;
       row.appendChild(cellNumber); 
+      
       var cellCode = document.createElement('td');
       cellCode.textContent = convertToBanglaNumber(result.products[i].code);
+      cellCode.contentEditable = true;
       row.appendChild(cellCode);
+      
       var cellDescription = document.createElement('td'); 
       cellDescription.textContent =  convertToBanglaNumber(productlist[result.products[i].code]);
-      row.appendChild(cellDescription);  
+      cellDescription.contentEditable = true;
+      row.appendChild(cellDescription); 
+      
       var cellQuantity = document.createElement('td');
       cellQuantity.colSpan = 3; // colspan='3'
       var unitchanging = convertUnits(result.products[i].quantity)
-      cellQuantity.textContent = convertToBanglaNumber(unitchanging); 
+      cellQuantity.textContent = convertToBanglaNumber(unitchanging);
+      cellQuantity.contentEditable = true;
       row.appendChild(cellQuantity); 
       productsTableBody.appendChild(row);
     }
