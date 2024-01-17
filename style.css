@@ -129,7 +129,12 @@ font-weight: bold;
 }
 
 #dinamic-product-add > tr:nth-child(even) {
-    background: #00000012;
+    background: #00000006;
+}
+
+#dinamic-product-add > td:hover {
+    background: #ecbf3e;
+    cursor: pointer;
 }
 
 span{
