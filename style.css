@@ -89,7 +89,8 @@ background-color: rgba(0, 0, 0, 0.122);
 border: 1px solid rgba(0, 0, 0, 0.289);
 padding: 2px 0px;   
 text-align: center;
-} 
+}
+
 
 
 .rightallthelement{
@@ -120,9 +121,15 @@ padding-right: 60px;
 }  
 .due-paid-sell{
   width: 45%;
+  transform: rotate(337deg);
+  OPACITY: 50%;
 }
 .dinamic-product-add > tr > td:nth-child(3){
 font-weight: bold;
+}
+
+#dinamic-product-add > tr:nth-child(even) {
+    background: #00000012;
 }
 
 span{
