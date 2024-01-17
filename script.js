@@ -119,7 +119,7 @@ function parseAndDisplay(getValue) {
      
     
       var cellDescription = document.createElement('td'); 
-      cellDescription.textContent = productlist[result.products[i].code];
+      cellDescription.textContent =  convertToBanglaNumber(productlist[result.products[i].code]);
       row.appendChild(cellDescription);  
       
     
@@ -183,7 +183,7 @@ function parseAndDisplay(getValue) {
       cellCode.textContent = convertToBanglaNumber(result.products[i].code);
       row.appendChild(cellCode);
       var cellDescription = document.createElement('td'); 
-      cellDescription.textContent = productlist[result.products[i].code];
+      cellDescription.textContent =  convertToBanglaNumber(productlist[result.products[i].code]);
       row.appendChild(cellDescription);  
       var cellQuantity = document.createElement('td');
       cellQuantity.colSpan = 3; // colspan='3'
