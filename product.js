@@ -4,7 +4,7 @@ const unitTranslations = {
   'pcs': 'পিচ',
   'kg': 'কেজি',
   'yard': 'গজ',
-  'bag': 'বেগ',
+  'bag': 'ব্যাগ',
   'liter': 'লিটার',
   'feet':'ফিট'
 };
