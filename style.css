@@ -49,7 +49,6 @@ bottom: 0;
 .company-info {
 display: flex; 
 align-items: center; 
-margin-bottom: 20px;
 }
 
 .company-info img {
