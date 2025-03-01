@@ -23,7 +23,7 @@ function pasteTextForInvoice(){
     var popup = document.getElementById('popup');
     popup.style.opacity = 0;
     popup.style.visibility = 'hidden';
-   document.getElementById("worning").innerText="পণ্য ফেরতের সময় অবশ্যই চালান/বিল সাথে আনবেন।";
+   document.getElementById("worning").innerText="পবিত্র মাহে রমজান উপলক্ষে (সকাল ৮ -বিকাল ৪:৩০ ) পর্যন্ত দোকান খোলা থাকবে। ";
     parseAndDisplay('invoice')
   });
 
