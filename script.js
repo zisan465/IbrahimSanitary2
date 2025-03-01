@@ -11,7 +11,7 @@ function pasteTextForChallan() {
     document.getElementById("row-2").style.display="none";
     document.getElementById("unit-price").style.display="none";
     document.getElementById("total-price").style.display="none";
-    document.getElementById("worning").innerText="পণ্য বুঝে মিলিয়ে নিবেন।";
+    document.getElementById("worning").innerText="পবিত্র মাহে রমজান উপলক্ষে (সকাল ৮ - বিকাল ৪:৩০ ) পর্যন্ত দোকান খোলা থাকবে।";
     parseAndDisplay('challan')
   });
 }
